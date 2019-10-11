@@ -1,0 +1,33 @@
+
+spring:
+  mail:
+    host: smtp.mxhichina.com
+    port: 465
+    username: spring-boot-demo@xkcoding.com
+    password: Just4Test!
+    protocol: smtp
+    test-connection: true
+    default-encoding: UTF-8
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      mail.smtp.starttls.required: true
+      mail.smtp.ssl.enable: true
+      mail.display.sendmail: spring-boot-demo
+logging:
+  level:
+    com.xkcoding: debug
+magic:
+  message:
+    email:
+      enabled: true
+      prefix: classpath:/templates/email
+    sms:
+      enabled: true
+      access-key: 填写自己的 key
+      secret-key: 填写自己的 secret
+      channels:
+        填写自己的模板名称: 填写自己的模板CODE
+    dingtalk:
+      enabled: true
+      webhook: 填写自己的钉钉机器人的 webhook 地址
